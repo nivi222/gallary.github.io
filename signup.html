@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400;600;700&display=swap');
+     </style>
+   <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header class="photo">
+        <img src="photos/cm.png" class="t">
+        <h3>fotolikes</h3>
+    <div class="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">login</a></li>
+    
+            
+        </ul>
+       
+ </header>
+   <!--  -->
+    <div class="base"></div>
+    <div class="page">
+    <div class="contact">
+        <form action="" id="form" class="form">
+            <h2>Signup</h2>
+            <div class="form-control">
+                <label for="username">Name</label>
+                <input type="text" id="name" placeholder="Enter username"/>
+                <span   style=" color: rgb(182, 39, 13) "  id="name_error"></span>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email"/>
+                <span  style=" color: rgb(182, 39, 13) "id="email_error"></span>
+            </div>
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Enter password"/>
+                <span style=" color: rgb(182, 39, 13) " id="pass_error"></span>
+            </div>
+            <button type="submit" onclick="sub()">Submit</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>fotolikes</h4>
+                    <ul>
+                        <li><a href="">family pictures</a></li>
+                        <li><a href="">natures</a></li>
+                        <li><a href="">traditional</a></li>
+                        <li><a href="">personal</a></li>
+                    </ul>
+                </div>
+
+                <!-- 2nd Column -->
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact US</a></li>
+                        <li><a href="">gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3rd Column -->
+
+                <!-- 3th Column -->
+
+                <div class="footer-col">
+                    <h4>datas</h4>
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="inputName">
+                        <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>&#169; 2024 fotolikes. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="photo">
+        <img src="photos/cm.png" class="t">
+        <h3>fotolikes</h3>
+    <div class="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="x"> 
+            <div class="icon"><i class="fa fa-home o" aria-hidden="true"></i></div>
+            <div class="icon"><i class="fa fa-camera-retro c" aria-hidden="true"></i></div>
+            <div class="icon"><i class="fa fa-address-book w" aria-hidden="true"></i></div>
+            <div class="icon"><i class="fa fa-phone m" aria-hidden="true"></i></div>
+            <label  id="dark-change"></label>
+    </div>
+ </header> 
+<!--  -->
+    <div class="heading">
+        <h1>About us</h1>
+        <p>foto are beloved memories enjoyed by million of peoples in worldwide Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquid laborum, repudiandae corrupti nisi sint tempore sit adipisci explicabo rem repellendus nihil porro laboriosam, ab nobis! Odio maiores eius placea</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="photos/cwc2.jfif">
+            </div>
+<div class="about-content">
+    <h2>capturing moments enhance the taste of lives</h2>
+    <p>Photography is an art form that involves capturing light with a camera to create a visual representation of a moment or scene. This art form has evolved significantly since its inception in the early 19th century and continues to evolve as technology advances.</p>
+</div>
+<button type="button" class="read-more">Readmore</button>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>fotolikes</h4>
+                    <ul>
+                        <li><a href="">family pictures</a></li>
+                        <li><a href="">natures</a></li>
+                        <li><a href="">traditional</a></li>
+                        <li><a href="">personal</a></li>
+                    </ul>
+                </div>
+
+                <!-- 2nd Column -->
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact US</a></li>
+                        <li><a href="">gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3rd Column -->
+
+                <!-- 3th Column -->
+
+                <div class="footer-col">
+                    <h4>datas</h4>
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="inputName">
+                        <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>&#169; 2024 fotolikes. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+</script>
+</body>
+</html>

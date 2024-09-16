@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="photo">
+        <img src="photos/cm.png" class="t">
+        <h3>fotolikes</h3>
+    <div class="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">signup</a></li>
+        </ul>
+       
+ </header>
+ 
+    <section>
+        <label  id="dark-change"></label>
+        <div class="login">
+        <h1>login</h1><br><br>
+        <div class="login-form">
+         <h4>username</h4>
+         <div class="username-input">
+         <input type="email" placeholder="enter your mail" id="username">
+         </div>
+         <h4>password</h4>
+         <div class="password-input">
+            <input type="password" id="password" placeholder="type your password">
+         </div>
+         <p class="p">forgot password?</p><br>  
+        </div>
+        <button class="login-btn" onclick="func()">
+            LOGIN
+        </button>
+        <div class="alternative-signup">
+            <span>sign-up</span>
+        </div>
+    </div>
+    </section>
+    <script>
+        
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            if(email == 'nivi@gmail.com' && pass == '123456'){
+                alert("login successful!")
+            window.location.assign("index.html")
+            }
+            else if(email ==  "" &&   pass == ""){
+                    alert("please enter email and password")
+                }
+                else if(email != 'nivi@gmail.com' &&  pass != '123456'){
+                alert("please enter correct email or password")
+               }
+                else if(email == ""){
+                    alert("please enter valid email")
+                }
+                else if(email != 'nivi@gmail.com')
+                {
+                    alert("please enter correct email")
+                }
+                else if(pass == ""){
+                    alert("please enter valid password")
+                }
+                else if(pass != '123456'){
+                    alert("please enter correct password")
+                }
+
+               else{
+                alert("invalid")
+               }
+               
+            } 
+    </script>
+    <script>
+        var content = document.getElementsByTagName('section')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>fotolikes</h4>
+                    <ul>
+                        <li><a href="">family pictures</a></li>
+                        <li><a href="">natures</a></li>
+                        <li><a href="">traditional</a></li>
+                        <li><a href="">personal</a></li>
+                    </ul>
+                </div>
+
+                <!-- 2nd Column -->
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact US</a></li>
+                        <li><a href="">gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3rd Column -->
+
+                <!-- 3th Column -->
+
+                <div class="footer-col">
+                    <h4>datas</h4>
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="inputName">
+                        <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>&#169; 2024 fotolikes. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

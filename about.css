@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header{ 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    } 
+  h3{
+       color: rgb(16, 81, 141);
+       position: absolute;
+       top: 22%;
+       right: 79%;
+       font-size: xx-large;
+       font-style: italic;
+    }
+    .t{
+     height: 150px;
+     width: 150px;
+    }
+    .list ul{
+       word-spacing: 40px;
+       padding-top: 40px;
+       margin: 10px;
+    }
+    .list ul li{
+       display: inline;
+    }
+    .list ul li a{
+       font-style: italic;
+       font-size: x-large;
+       color: rgb(16, 32, 104);
+       text-decoration: none;
+    }
+    ul li a:hover{
+     color:chartreuse;
+     font-size: xx-large;
+    }
+    /*  */
+    label{
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 20px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    label:before{
+        position: absolute;
+        content: '';
+        width:20px;
+        height: 20px;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        background: #000;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    label.active:before{
+        left: 24px;
+        background: #fff;
+    }
+    body.night{
+        background: #000;
+        color: #fff;
+    }
+    /* ---------------------dark white */
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #3d3333;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+.heading p{
+    font-size: 18px;
+    color: #666;
+     margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 10px 20px;
+}
+ .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex:1;
+
+}
+.about-image img{
+    width: 79%;
+    height: auto;
+    display: block;
+    transition: 0.5s;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.about-content.button.read-more{
+    display:inline;
+    background-color: #4caf50;
+}
+@media screen  and(max-width:320px){
+    .heading{
+        padding: 0px 3px;
+    }
+    .heading h2{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 18px;
+        color: #666;
+          margin-bottom: 35px;
+    }
+    .container {
+        padding: 0px;
+       }
+       .about{
+        padding: 20px;
+        flex-direction: column;
+       }
+       
+       .about-image img{
+        width: 79%;
+        height: auto;
+        display: block;
+        transition: 0.5s;
+    }
+       .about-content p{
+        padding: 0%;
+        font-size: 16px;
+       }
+}
+ footer .container{
+     background-color: black;
+ }
+ 
+ .row{
+     display: flex;
+     justify-content: space-between;
+     padding: 40px 100px;
+ }
+ .footer-col ul{
+     list-style: none;
+ }
+ 
+ .footer-col h4{
+     color: white;
+     margin-bottom: 25px;
+     font-size: 22px;
+     position: relative;
+     font-family: 'Ubuntu', sans-serif;
+ }
+ 
+ .footer-col h4::before{
+     content: '';
+     width: 70px;
+     height: 2px;
+     position: absolute;
+     background-color: #e91e64;
+     bottom: -10px;
+ }
+ 
+ .footer-col ul li{
+     padding: 10px 0;
+ }
+ .footer-col ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 16px;
+     opacity: 0.7;
+     transition: 0.5s;
+ }
+ .footer-col ul li a:hover{
+     opacity: 1;
+ }
+ .footer-col input{
+     border: none;
+     width: 250px;
+     height: 45px;
+     display: block;
+     padding-left: 20px;
+     margin: 14px 0;
+ }
+ 
+ .footer-col .inputSubmit{
+     padding: 0px 20px;
+     background-color: #e91e64;
+     border: none;
+     color: white;
+ }
+ .col p{
+     color: white;
+ }
+ 
+ 
+ @media (max-width: 320px){
+     footer .row{
+         flex-direction: column;
+         padding: 20px 30px;
+     }
+ 
+     footer .footer-col ul{
+         margin-left: 20px;
+         margin-bottom: 20px;
+     }
+     .footer-col input{
+         width: 100%;
+     }
+ }  
+ 
+    
